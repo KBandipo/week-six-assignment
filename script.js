@@ -58,3 +58,5 @@ for (let i = 0; i < checkItems.length; i++) {
     nonEdible.push(checkItems[i]);
   }
 }
+let joinEdibleStr = edible.join(",");
+let joinNonEdibleStr = nonEdible.join(",");
