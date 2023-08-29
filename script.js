@@ -6,3 +6,18 @@ let setofa = [];
 let setofb = [];
 let setofd = [];
 let setofy = [];
+
+for (let i = 0; i < checkStr.length; i++) {
+  if (checkStr[i] === "a") {
+    setofa.push(checkStr[i]);
+  }
+  if (checkStr[i] === "b") {
+    setofb.push(checkStr[i]);
+  }
+  if (checkStr[i] === "d") {
+    setofd.push(checkStr[i]);
+  }
+  if (checkStr[i] === "y") {
+    setofy.push(checkStr[i]);
+  }
+}
