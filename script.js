@@ -21,3 +21,8 @@ for (let i = 0; i < checkStr.length; i++) {
     setofy.push(checkStr[i]);
   }
 }
+
+console.log(`The number of a in the "${test}" is ${setofa.length}}`);
+console.log(`The number of b in the "${test}" is ${setofb.length}}`);
+console.log(`The number of d in the "${test}" is ${setofd.length}}`);
+console.log(`The number of y in the "${test}" is ${setofy.length}}`);
