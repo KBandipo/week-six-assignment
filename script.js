@@ -4,5 +4,5 @@ let test = "abdsgyhidsaadgbdaasbvcydsaabdgsaayre";
 let checkStr = test.split("");
 let setofa = [];
 let setofb = [];
-let setofc = [];
+let setofd = [];
 let setofy = [];
