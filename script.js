@@ -31,10 +31,10 @@ function checker(test) {
   }
 
   //Display the output
-  console.log(`The number of a in the "${test}" is ${setofa.length}}`);
-  console.log(`The number of b in the "${test}" is ${setofb.length}}`);
-  console.log(`The number of d in the "${test}" is ${setofd.length}}`);
-  console.log(`The number of y in the "${test}" is ${setofy.length}}`);
+  console.log(`The number of a in the "${test}" is ${setofa.length}`);
+  console.log(`The number of b in the "${test}" is ${setofb.length}`);
+  console.log(`The number of d in the "${test}" is ${setofd.length}`);
+  console.log(`The number of y in the "${test}" is ${setofy.length}`);
 }
 
 //Invoke the function
