@@ -75,6 +75,6 @@ let joinEdibleStr = edible.join(",");
 let joinNonEdibleStr = nonEdible.join(",");
 
 //Display the output
-console.log(`The general items are "${items}"`);
+console.log(`The General items are "${items}"`);
 console.log(`Edible items of the general items are "${joinEdibleStr}"`);
 console.log(`Non Edible items of the general items  are "${joinNonEdibleStr}"`);
