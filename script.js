@@ -28,3 +28,5 @@ function checker(test) {
   console.log(`The number of d in the "${test}" is ${setofd.length}}`);
   console.log(`The number of y in the "${test}" is ${setofy.length}}`);
 }
+
+checker("abdsgyhidsaadgbdaasbvcydsaabdgsaayre");
