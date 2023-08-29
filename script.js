@@ -7,6 +7,7 @@
 function checker(test) {
   //Convert the string input to array
   let checkStr = test.split("");
+  console.log(`The number of the input string "${test}" is ${checkStr.length}`);
   //Create empty cotainers to store set of same alphabets
   let setofa = [];
   let setofb = [];
