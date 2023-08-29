@@ -42,3 +42,19 @@ let items =
 let checkItems = items.split(", ");
 let edible = [];
 let nonEdible = [];
+
+for (let i = 0; i < checkItems.length; i++) {
+  if (
+    checkItems[i] === "rice" ||
+    checkItems[i] === "yam" ||
+    checkItems[i] === "beans" ||
+    checkItems[i] === "cocoyam" ||
+    checkItems[i] === "banana" ||
+    checkItems[i] === "semo" ||
+    checkItems[i] === "milk"
+  ) {
+    edible.push(checkItems[i]);
+  } else {
+    nonEdible.push(checkItems[i]);
+  }
+}
