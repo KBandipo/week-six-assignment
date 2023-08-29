@@ -1,5 +1,7 @@
 "use strict";
-/* create a function that will count through the string and show the number of a, b, d and y each contained in the string "abdsgyhidsaadgbdaasbvcydsaabdgsaayre", . */
+
+//QUESTION 1
+/* create a function that will count through the string and show the number of a, b, d and y each contained in the string "abdsgyhidsaadgbdaasbvcydsaabdgsaayre". */
 
 function checker(test) {
   let checkStr = test.split("");
@@ -30,3 +32,13 @@ function checker(test) {
 }
 
 checker("abdsgyhidsaadgbdaasbvcydsaabdgsaayre");
+
+//QUESTION 2
+/*Given a string of items to be "rice, yam, beans, cocoyam, banana,semo, table, tyre, milk, phone, watch, chair" use methods to separate the edible and non-edible items from the string.*/
+
+let items =
+  "rice, yam, beans, cocoyam, banana, semo, table, tyre, milk, phone, watch, chair";
+
+let checkItems = items.split(", ");
+let edible = [];
+let nonEdible = [];
