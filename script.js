@@ -3,14 +3,21 @@
 //QUESTION 1
 /* create a function that will count through the string and show the number of a, b, d and y each contained in the string "abdsgyhidsaadgbdaasbvcydsaabdgsaayre". */
 
+//Create Function
 function checker(test) {
+  //Convert the string input to array
   let checkStr = test.split("");
+  //count the number of element present in input
+  console.log(`The number of the input string "${test}" is ${checkStr.length}`);
+  //Create empty cotainers to store set of same alphabets
   let setofa = [];
   let setofb = [];
   let setofd = [];
   let setofy = [];
 
+  //loop through the array of contents
   for (let i = 0; i < checkStr.length; i++) {
+    //Check for duplicates
     if (checkStr[i] === "a") {
       setofa.push(checkStr[i]);
     }
@@ -25,25 +32,30 @@ function checker(test) {
     }
   }
 
-  console.log(`The number of a in the "${test}" is ${setofa.length}}`);
-  console.log(`The number of b in the "${test}" is ${setofb.length}}`);
-  console.log(`The number of d in the "${test}" is ${setofd.length}}`);
-  console.log(`The number of y in the "${test}" is ${setofy.length}}`);
+  //Display the output
+  console.log(`The number of a in the "${test}" is ${setofa.length}`);
+  console.log(`The number of b in the "${test}" is ${setofb.length}`);
+  console.log(`The number of d in the "${test}" is ${setofd.length}`);
+  console.log(`The number of y in the "${test}" is ${setofy.length}`);
 }
 
+//Invoke the function
 checker("abdsgyhidsaadgbdaasbvcydsaabdgsaayre");
 
 //QUESTION 2
-/*Given a string of items to be "rice, yam, beans, cocoyam, banana,semo, table, tyre, milk, phone, watch, chair" use methods to separate the edible and non-edible items from the string.*/
+/*
+Use methods to separate the edible and non-edible items from the string of items "rice, yam, beans, cocoyam, banana,semo, table, tyre, milk, phone, watch, chair"*/
 
 let items =
   "rice, yam, beans, cocoyam, banana, semo, table, tyre, milk, phone, watch, chair";
-
+//Convert the string input to array
 let checkItems = items.split(", ");
+//Create empty cotainers to store set of same items
 let edible = [];
 let nonEdible = [];
-
+//Loop through the items
 for (let i = 0; i < checkItems.length; i++) {
+  //Conditions to check for edible and non-edible
   if (
     checkItems[i] === "rice" ||
     checkItems[i] === "yam" ||
@@ -58,5 +70,11 @@ for (let i = 0; i < checkItems.length; i++) {
     nonEdible.push(checkItems[i]);
   }
 }
+
 let joinEdibleStr = edible.join(",");
 let joinNonEdibleStr = nonEdible.join(",");
+
+//Display the output
+console.log(`The General items are "${items}"`);
+console.log(`Edible items of the general items are "${joinEdibleStr}"`);
+console.log(`Non Edible items of the general items  are "${joinNonEdibleStr}"`);
